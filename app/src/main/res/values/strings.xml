@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">exercicio_3_seletorCores</string>
+    <string name="texto">Texto</string>
+    <string name="TamLetra">Tamanha da Letra</string>
+    <string name="Estilo">Estilo</string>
+    <string name="cbx_Negrito">Negrito</string>
+    <string name="cbox_Italico">Itálico</string>
+    <string name="cbx_Maiusculas">Maiúsculas</string>
+    <string name="CorDaLetra">Cor da Letra</string>
+    <string name="Vermelho">Vermelho</string>
+    <string name="Verde">Verde</string>
+    <string name="Azul">Azul</string>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/Wheat"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewId"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="@dimen/margem"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto"
+            android:layout_margin="@dimen/margem2"
+            android:textSize="20sp"/>
+
+           <EditText
+               android:id="@+id/edtText"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/margem2"/>
+
+           <Button
+               android:id="@+id/btnEnviar"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_margin="@dimen/margem2"
+               android:background="@drawable/carregar"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margem2"
+                android:text="@string/TamLetra"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarId"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margem"
+                android:max="80"
+                android:progress="15"
+                android:scaleX="2"
+                android:scaleY="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margem"
+                android:text="@string/Estilo"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem2"
+                android:layout_marginLeft="@dimen/margem3"
+                android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/negrito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="-1dp"
+                        android:text="@string/cbx_Negrito" />
+
+                    <CheckBox
+                        android:id="@+id/italico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cbxMargin"
+                        android:text="@string/cbox_Italico" />
+
+                    <CheckBox
+                        android:id="@+id/maiusculas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:text="@string/cbx_Maiusculas" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margem"
+                android:text="@string/CorDaLetra"
+                android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margem2"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/vermelho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margem2"
+                        android:text="@string/Vermelho"/>
+
+                    <RadioButton
+                        android:id="@+id/verde"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margem2"
+                        android:text="@string/Verde"/>
+
+                    <RadioButton
+                        android:id="@+id/azul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margem2"
+                        android:text="@string/Azul"/>
+                </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
