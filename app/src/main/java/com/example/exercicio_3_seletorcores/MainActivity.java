@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private RadioButton rbVermelho;
     private RadioButton rbVerde;
     private RadioButton rbAzul;
-    private String text;
+
 
 
 
@@ -70,36 +70,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    @Override
-    public void onClick(View v) {
-
-        text = editText.getText().toString();
-        textView.setText(text);
-        if(cboxNegrito.isChecked()){
-            textView.setTypeface(null,Typeface.BOLD);
+        @Override
+        public void onClick(View v) {
+            textView.setText(editText.getText().toString());
 
         }
 
-        if(cboxItalico.isChecked()){
-            textView.setTypeface(null,Typeface.ITALIC);
+
+        public void cboxClick(View view){
+
+            if(cboxNegrito.isChecked()){
+                textView.setTypeface(null,Typeface.BOLD);
+
+            }
+
+            if(cboxItalico.isChecked()){
+                textView.setTypeface(null,Typeface.ITALIC);
+
+            }
+
+            if(cboxMaiusculas.isChecked()){
+                textView.setAllCaps(true);
+            }
 
         }
 
-        if(cboxMaiusculas.isChecked()){
-            textView.setAllCaps(true);
-        }
+        public void radioClick(View view){
 
-
-        if(rbVermelho.isChecked()){
-            textView.setTextColor(Color.RED);
+            if(rbVermelho.isChecked()){
+                textView.setTextColor(Color.RED);
+            }
+            if(rbVerde.isChecked()){
+                textView.setTextColor(Color.GREEN);
+            }
+            if(rbAzul.isChecked()){
+                textView.setTextColor(Color.BLUE);
+            }
         }
-        if(rbVerde.isChecked()){
-            textView.setTextColor(Color.GREEN);
-        }
-        if(rbAzul.isChecked()){
-            textView.setTextColor(Color.BLUE);
-        }
-
-    }
 
 }
